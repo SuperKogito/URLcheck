@@ -122,6 +122,12 @@ jobs:
 
         # choose if the force pass or not
         force_pass: true
+
+        # save the results to a file
+        save: results.csv
+
+        # The results format saved to a file. Supported: 'csv' or 'sarif'. Default is csv
+        format: csv 
 ```
 ## Inputs
 
@@ -138,7 +144,8 @@ jobs:
 | `print_all`                 | <span style="color:green"> optional </span>  | Choose whether to include file with no URLs in the prints.                     |
 | `verbose`                   | <span style="color:green"> optional </span>  | Choose whether to print a more verbose end summary with files and broken URLs  |
 | `retry_count`               | <span style="color:green"> optional </span>  | If a request fails, retry this number of times. Defaults to 1                  |
-| `save`                      | <span style="color:green"> optional </span>  | A path to a csv file to save results to                                        |
+| `save`                      | <span style="color:green"> optional </span>  | A path to a file to save results to                                        |
+| `format`                      | <span style="color:green"> optional </span>  | The results format saved to a file. Supported: 'csv' or 'sarif'. Default is csv                                        |
 | `timeout`                   | <span style="color:green"> optional </span>  | The timeout to provide to requests to wait for a response.                     |
 | `exclude_urls`              | <span style="color:green"> optional </span>  | A comma separated list of links.                                               |
 | `exclude_patterns`          | <span style="color:green"> optional </span>  | A comma separated list of patterns.                                            |
