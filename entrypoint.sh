@@ -90,6 +90,11 @@ if [ ! -z "${INPUT_SAVE}" ]; then
     COMMAND="${COMMAND} --save ${INPUT_SAVE}"
 fi
 
+# format (optional)
+if [ ! -z "${INPUT_FORMAT}" ]; then
+    COMMAND="${COMMAND} --format ${INPUT_FORMAT}"
+fi
+
 # force pass (optional)
 if [ "${INPUT_FORCE_PASS}" == "true" ]; then
     echo "Force pass requested."

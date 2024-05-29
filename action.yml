@@ -56,7 +56,12 @@ inputs:
     default: 1
 
   save:
-    description: "A csv file path to save the results to."
+    description: "A file path to save the results to."
+    required: false
+    default: ""
+  
+  format:
+    description: "The results format saved to a file. Supported: 'csv' or 'sarif'. Default is csv."
     required: false
     default: ""
 
